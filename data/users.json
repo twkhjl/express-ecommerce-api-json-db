@@ -1,0 +1,70 @@
+{
+  "1": {
+    "username": "king arthur",
+    "password": "password1",
+    "profession": "king",
+    "id": 1
+  },
+  "2": {
+    "username": "rob kendal",
+    "password": "password3",
+    "profession": "code fiddler",
+    "id": 2
+  },
+  "3": {
+    "username": "teresa may",
+    "password": "parliament",
+    "profession": "brexit killer",
+    "id": 3
+  },
+  "1616919481170": {
+    "username": "user2",
+    "password": "password1"
+  },
+  "1616941949671": {
+    "username": "user3",
+    "password": 123
+  },
+  "1616941971587": {
+    "username": "user3",
+    "password": 123
+  },
+  "1616942117247": {
+    "username": "user3",
+    "password": "$2b$11$cK98S89Z/gjLVs30BnZxyeVUgyN/m8ZrZv7QbnaOPjJhFREuqpc9u"
+  },
+  "1616942601258": {
+    "username": "user5",
+    "password": "$2b$11$wGwT9iRMfryc24G9A35DAeJ2iSCZALOSs8w85fm/L7h4EhIdLXdq."
+  },
+  "1616945909976": {
+    "username": "user333",
+    "password": "$2b$11$nsqkz6jxsP0umgirTZQu3uXxoLNk/pvbHNktMZBAyJVrpXY3Ppod.",
+    "id": "1616945909976"
+  },
+  "1616946018863": {
+    "username": "user333",
+    "password": "$2b$11$P.WFmIoSlRR8SbghLRAPzuOJCilWjofMvAXWveun4xYb6bnMnxfDu",
+    "id": "1616946018863"
+  },
+  "1616946080955": {
+    "username": "user333",
+    "password": "$2b$11$k0zrq7Wdy0kjUPA7o1XMCeACcts7vL.mZ2r.AyVgUgyYgLwZCQBkS",
+    "id": "1616946080955"
+  },
+  "1616946121923": {
+    "username": "user333",
+    "password": "$2b$11$y1dnWqe3Q4UH8mTIJcsd7u7vN5bTTd.cvlou0QtzP9wG7NEC/KBlC",
+    "id": "1616946121923"
+  },
+  "1617189694873": {
+    "username": "user3",
+    "password": "$2b$11$LG24NSIBT6bEcR1XYvzNcuRJ5cgGElFkqd0pNP0HwnuDRGwIkiwXu",
+    "id": "1617189694873"
+  },
+  "1617195232192": {
+    "username": "user3",
+    "password": "$2b$11$vDs.YxEU83OJl.CM0UhhqO08ba6q/uxFL0TqYB0WzbJCHAFV9eZ4K",
+    "id": "1617195232192"
+  }
+}
