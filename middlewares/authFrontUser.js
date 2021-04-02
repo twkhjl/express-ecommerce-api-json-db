@@ -13,7 +13,7 @@ let getAllUsers = () => {
   });
 
   users = JSON.parse(users);
-  users = users['cp'];
+  users = users['front'];
   return Promise.resolve(users);
 
 
@@ -21,7 +21,7 @@ let getAllUsers = () => {
 
 
 async function verifyUser(data) {
-  const username = data.username;
+  const username = data.email;
   const password = data.password;
   let user = {};
   let userId = '';
@@ -29,14 +29,14 @@ async function verifyUser(data) {
   let users = await getAllUsers();
 
   for (k in users) {
-    if (users[k].username == username) {
-      user.username = username;
+    if (users[k].email == username) {
+      user.email = username;
       userId = k;
       passwordHash = users[k].password;
     }
   };
-  if (!user.username) {
-    return Promise.resolve({ error: 'user name not exist' });
+  if (!user.email) {
+    return Promise.resolve({ error: 'user email not exist' });
   }
   if (!bcrypt.compareSync(`${password}`, passwordHash)) {
     return Promise.resolve({ error: 'password incorrect' });
@@ -55,12 +55,12 @@ const authUser = function (req, res, next) {
   verifyUser(data)
     .then(result => {
 
-      if (!result.username) {
+      if (!result.email) {
         return res.json(result);
       }
-      const SECRET_CP = process.env.SECRET_CP;
+      const SECRET_FRONT = process.env.SECRET_FRONT;
       const EXPIRES_IN = process.env.EXPIRES_IN;
-      const token = jwt.sign(result, SECRET_CP, { expiresIn: EXPIRES_IN });
+      const token = jwt.sign(result, SECRET_FRONT, { expiresIn: EXPIRES_IN });
       return res.json({ token: token, expiresIn: EXPIRES_IN });
     })
     .catch(next);

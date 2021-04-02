@@ -1,8 +1,8 @@
 // import other routes
-const userRoutes = require('./users');
+const userCpRoutes = require('./users_cp');
+const userFrontRoutes = require('./users_front');
 const testRoutes = require('./test');
 
-const verifyJWT = require('../middlewares/verifyJWT');
 
 
 const appRouter = (app, fs) => {
@@ -12,20 +12,16 @@ const appRouter = (app, fs) => {
         res.send('welcome to the development api-server');
     });
 
-    // other routes
-    userRoutes(app, fs);
+    userCpRoutes(app, fs);
+    userFrontRoutes(app, fs);
 
-    // verify jwt
-    app.post('/jwt',
-    verifyJWT,
-    function(req, res, next){
-        res.send({result:'done'});
-      });
-    
+
+ 
+
     // test
     testRoutes(app, fs);
 
-    
+
 
 };
 
