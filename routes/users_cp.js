@@ -9,7 +9,7 @@ const verifyJWT = require('../middlewares/verifyJWT');
 const dataPath = './data/users.json';
 
 
-const userRoutes = (app, fs) => {
+const userCpRoutes = (app, fs) => {
 
 	// helper methods
 	const readFile = (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {
@@ -184,4 +184,4 @@ const userRoutes = (app, fs) => {
 		});
 };
 
-module.exports = userRoutes;
+module.exports = userCpRoutes;

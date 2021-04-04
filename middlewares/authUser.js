@@ -61,7 +61,10 @@ const authUser = function (req, res, next) {
       const SECRET_CP = process.env.SECRET_CP;
       const EXPIRES_IN = process.env.EXPIRES_IN;
       const token = jwt.sign(result, SECRET_CP, { expiresIn: EXPIRES_IN });
-      return res.json({ token: token, expiresIn: EXPIRES_IN });
+      req.jwt = { token: token, expiresIn: EXPIRES_IN };
+      req.username = result.username;
+      next();
+      // return res.json({ token: token, expiresIn: EXPIRES_IN });
     })
     .catch(next);
 }

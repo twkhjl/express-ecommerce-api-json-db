@@ -56,12 +56,17 @@ const authUser = function (req, res, next) {
     .then(result => {
 
       if (!result.email) {
-        return res.json(result);
+        req.result = result;
+        next();
+        return;
+        // return res.json(result);
       }
       const SECRET_FRONT = process.env.SECRET_FRONT;
       const EXPIRES_IN = process.env.EXPIRES_IN;
       const token = jwt.sign(result, SECRET_FRONT, { expiresIn: EXPIRES_IN });
-      return res.json({ token: token, expiresIn: EXPIRES_IN });
+      req.result = {email:result.email, token: token, expiresIn: EXPIRES_IN };
+      next();return;
+      // return res.json({ token: token, expiresIn: EXPIRES_IN });
     })
     .catch(next);
 }

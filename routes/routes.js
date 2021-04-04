@@ -1,7 +1,11 @@
 // import other routes
+const testRoutes = require('./test');
+
 const userCpRoutes = require('./users_cp');
 const userFrontRoutes = require('./users_front');
-const testRoutes = require('./test');
+const productRoutes = require('./products');
+const catRoutes = require('./cats');
+
 
 
 
@@ -14,9 +18,8 @@ const appRouter = (app, fs) => {
 
     userCpRoutes(app, fs);
     userFrontRoutes(app, fs);
-
-
- 
+    productRoutes(app, fs);
+    catRoutes(app, fs);
 
     // test
     testRoutes(app, fs);

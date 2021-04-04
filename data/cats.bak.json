@@ -1,0 +1,52 @@
+{
+  "maincat":{
+    "1":{
+      "id":1,
+      "name":"男"
+    },
+    "2":{
+      "id":2,
+      "name":"女"
+    }
+  },
+  "subcat1":{
+    "1":{
+      "id":1,
+      "maincat_id":1,
+      "name":"上衣"
+    },
+    "2":{
+      "id":2,
+      "maincat_id":1,
+      "name":"褲子"
+    }
+  },
+  "subcat2":{
+    "1":{
+      "id":1,
+      "maincat_id":1,
+      "subcat_id":1,
+      "name":"男上衣"
+    },
+    "2":{
+      "id":2,
+      "maincat_id":2,
+      "subcat_id":1,
+      "name":"女上衣"
+    },
+    "3":{
+      "id":3,
+      "maincat_id":1,
+      "subcat_id":2,
+      "name":"男褲"
+    },
+    "4":{
+      "id":3,
+      "maincat_id":2,
+      "subcat_id":2,
+      "name":"女褲"
+    }
+
+  }
+
+}

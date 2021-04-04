@@ -40,8 +40,8 @@
       "password": "$2b$11$vDs.YxEU83OJl.CM0UhhqO08ba6q/uxFL0TqYB0WzbJCHAFV9eZ4K",
       "id": "1617195232192",
       "role_id": 1,
-      "firstName": "",
-      "lastName": "",
+      "firstName": "1",
+      "lastName": "user",
       "nickname": "",
       "phone": "",
       "mobile": "",
@@ -52,7 +52,16 @@
     "1617368803407": {
       "email": "user3@user3.com",
       "password": "$2b$11$QMu82vD2QF/gmswlUFPeh.5.ZNw4RQFOUmed3jdLX6zr0HautvSSK",
-      "id": "1617368803407"
+      "id": "1617368803407",
+      "firstName": "3",
+      "lastName": "user"
+    },
+    "1617458795688": {
+      "firstName": "4",
+      "lastName": "user",
+      "email": "user4@user4.com",
+      "password": "$2b$11$huGAbr2OA6bYJNGbd5JSS.409SAbxc3FZ/82ysN1at.wPIVBno25u",
+      "id": "1617458795688"
     }
   }
 }
