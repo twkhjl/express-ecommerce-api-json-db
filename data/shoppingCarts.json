@@ -1,0 +1,32 @@
+[
+  {
+    "user_id": "1",
+    "items": [
+      {
+        "product_id": 1,
+        "qty": 1550,
+        "price": 100
+      },
+      {
+        "product_id": 2,
+        "qty": 20,
+        "price": 150
+      }
+    ]
+  },
+  {
+    "user_id": "2",
+    "items": [
+      {
+        "product_id": 1,
+        "qty": 50,
+        "price": 100
+      },
+      {
+        "product_id": 2,
+        "qty": 20,
+        "price": 150
+      }
+    ]
+  }
+]
