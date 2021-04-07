@@ -49,6 +49,20 @@
       "gender": "",
       "birthDate": ""
     },
+    "2": {
+      "email": "t2@t.t",
+      "password": "$2b$11$QMu82vD2QF/gmswlUFPeh.5.ZNw4RQFOUmed3jdLX6zr0HautvSSK",
+      "id": "2",
+      "role_id": 1,
+      "firstName": "2",
+      "lastName": "user",
+      "nickname": "",
+      "phone": "",
+      "mobile": "",
+      "address": "",
+      "gender": "",
+      "birthDate": ""
+    },
     "1617368803407": {
       "email": "user3@user3.com",
       "password": "$2b$11$QMu82vD2QF/gmswlUFPeh.5.ZNw4RQFOUmed3jdLX6zr0HautvSSK",

@@ -4,13 +4,21 @@
     "items": [
       {
         "product_id": 1,
-        "qty": 1550,
-        "price": 100
+        "name": "laborum",
+        "imgs": [
+          "https://picsum.photos/id/1079/500/600"
+        ],
+        "qty": 1,
+        "price": 1795
       },
       {
         "product_id": 2,
-        "qty": 20,
-        "price": 150
+        "name": "ullamco",
+        "imgs": [
+          "https://picsum.photos/id/1073/500/600"
+        ],
+        "qty": 1,
+        "price": 1081
       }
     ]
   },
@@ -19,13 +27,39 @@
     "items": [
       {
         "product_id": 1,
-        "qty": 50,
-        "price": 100
+        "name": "laborum",
+        "imgs": [
+          "https://picsum.photos/id/1079/500/600"
+        ],
+        "qty": 1,
+        "price": 1795
       },
       {
         "product_id": 2,
-        "qty": 20,
-        "price": 150
+        "name": "ullamco",
+        "imgs": [
+          "https://picsum.photos/id/1073/500/600"
+        ],
+        "qty": 1,
+        "price": 1081
+      },
+      {
+        "product_id": 3,
+        "name": "anim",
+        "imgs": [
+          "https://picsum.photos/id/1018/500/600"
+        ],
+        "qty": 1,
+        "price": 1001
+      },
+      {
+        "product_id": 4,
+        "name": "ea",
+        "imgs": [
+          "https://picsum.photos/id/1038/500/600"
+        ],
+        "qty": 1,
+        "price": 977
       }
     ]
   }

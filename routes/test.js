@@ -3,6 +3,8 @@ const verifyJWT = require('../middlewares/verifyJWT');
 
 const testRoutes = (app, fs) => {
 
+  app.get('/ttt',(req,res,next)=>{
+  })
 
   // test middleware
   function middleware1(req, res, next) {
