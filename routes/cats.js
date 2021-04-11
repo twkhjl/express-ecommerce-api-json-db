@@ -36,7 +36,7 @@ const catRoutes = (app, fs) => {
 				
 				let subcat1_ids = maincat1[k].subcat1_ids;
 				for(let id of subcat1_ids){
-					if(subcat1[id].gender_id==1){
+					if(subcat1[id].type_id==1){
 						maincat1[k].subcat1 = maincat1[k].subcat1 || [];
 						maincat1[k].subcat1.push(subcat1[id]);
 					}
@@ -49,7 +49,7 @@ const catRoutes = (app, fs) => {
 				
 				let subcat1_ids = maincat2[k].subcat1_ids;
 				for(let id of subcat1_ids){
-					if(subcat1[id].gender_id==2){
+					if(subcat1[id].type_id==2){
 						maincat2[k].subcat1 = maincat2[k].subcat1 || [];
 						maincat2[k].subcat1.push(subcat1[id]);
 					}

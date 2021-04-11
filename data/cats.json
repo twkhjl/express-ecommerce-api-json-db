@@ -34,43 +34,43 @@
     "1":{
       "id":1,
       "subcat_id":1,
-      "gender_id":1,
+      "type_id":1,
       "name":"男上衣"
     },
     "2":{
       "id":2,
       "subcat_id":1,
-      "gender_id":2,
+      "type_id":2,
       "name":"女上衣"
     },
     "3":{
       "id":3,
       "subcat_id":2,
-      "gender_id":1,
+      "type_id":1,
       "name":"男褲"
     },
     "4":{
       "id":4,
       "subcat_id":2,
-      "gender_id":2,
+      "type_id":2,
       "name":"女褲"
     },
     "5":{
       "id":5,
       "subcat_id":3,
-      "gender_id":1,
+      "type_id":1,
       "name":"男鞋"
     },
     "6":{
       "id":6,
       "subcat_id":3,
-      "gender_id":2,
+      "type_id":2,
       "name":"女鞋"
     },
     "7":{
       "id":7,
       "subcat_id":1,
-      "gender_id":1,
+      "type_id":1,
       "name":"男POLO衫"
     }
 

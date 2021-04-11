@@ -1,6 +1,7 @@
 const dbPath = {
-  shoppingCarts:"./data/shoppingCarts.json",
-  users:"./data/users.json"
+  shoppingCarts:`${DB_PATH}/shoppingCarts.json`,
+  users:`${DB_PATH}/users.json`,
+  orders:`${DB_PATH}/orders.json`,
 }
 
 module.exports= dbPath;

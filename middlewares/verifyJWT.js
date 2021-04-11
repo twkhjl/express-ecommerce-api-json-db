@@ -33,7 +33,6 @@ function verifyToken(jwt,type) {
 
 const verifyJWT = async function (req, res, next) {
   const jwt = req.body.token;
-
   //type should be one of the secrets props  e.g."cp"
   // const type = req.body.type;
   const type = req.tokenType;

@@ -10,6 +10,8 @@ const path = require('path');
 // global var
 global.APP_ROOT = path.resolve(__dirname);
 global.UPLOAD_PATH = `${path.resolve(__dirname)}/uploads`; 
+global.DB_PATH = `${path.resolve(__dirname)}/data`; 
+
 
 // const cookieParser = require('cookie-parser');
 const cors = require('cors');
