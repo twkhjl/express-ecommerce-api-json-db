@@ -6,6 +6,18 @@ const editJsonFile = require("edit-json-file");
 const dbPath = require("../data/dbPath");
 
 const orders = (app, fs) => {
+  app.get('/cp/orders/all',(req,res)=>{
+
+    let token = req.headers.authorization;
+    if (!token) return res.json({ error: "token is missing" });
+    let result = TokenHelper.verifyToken(token, "cp");
+    if (result.error) return res.send(result);
+    
+    let orders = editJsonFile(dbPath.orders);
+    
+    return res.json(orders.data);
+
+  });
   app.get('/order/user',(req,res)=>{
 
     let token = req.headers.authorization;

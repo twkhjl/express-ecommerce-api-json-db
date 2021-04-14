@@ -173,8 +173,8 @@ const userCpRoutes = (app, fs) => {
 	//cp user login
 	app.post('/login/cp', authUser,(req,res,next)=>{
 		let tokenObj = req.jwt;
-		let userObj = {username: req.username};
-		res.send(Object.assign(tokenObj,userObj));return;
+		let userObj = req.user;
+		return res.send(Object.assign(tokenObj,userObj));
 	});
 
 	// verify jwt
@@ -184,7 +184,7 @@ const userCpRoutes = (app, fs) => {
 	},
 		verifyJWT,
 		function (req, res, next) {
-			res.send({ result: 'jwt token valid' });return;
+			res.send({ success: 'jwt token valid' });return;
 		});
 };
 
