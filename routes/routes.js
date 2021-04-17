@@ -7,6 +7,7 @@ const productRoutes = require('./products');
 const catRoutes = require('./cats');
 const shoppingCartRoutes = require('./shoppingCarts');
 const ordersRoutes = require('./orders');
+const statisticsRoutes = require('./statistics');
 
 
 
@@ -24,6 +25,7 @@ const appRouter = (app, fs) => {
     catRoutes(app, fs);
     shoppingCartRoutes(app,fs);
     ordersRoutes(app,fs);
+    statisticsRoutes(app,fs);
 
     // test
     testRoutes(app, fs);
